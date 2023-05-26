@@ -1,0 +1,131 @@
+// fonts
+$sans-serif-font: 'Ubuntu', sans-serif;
+$lato-font: 'Lato', sans-serif;
+$roboto-font: 'Roboto Mono', sans-serif;
+$open-sans-font: 'Open Sans', sans-serif;
+$body-font: $open-sans-font;
+
+
+$primary-pink-dark: rgb(222, 27, 73);
+$primary-pink-1000: rgba(250, 76, 117, 1);
+$primary-pink-900: rgba(250, 76, 117, 0.9);
+$primary-pink-800: rgba(250, 76, 117, 0.8);
+$primary-pink-700: rgba(250, 76, 117, 0.7);
+$primary-pink-600: rgba(250, 76, 117, 0.6);
+$primary-pink-500: rgba(250, 76, 117, 0.5);
+$primary-pink-400: rgba(250, 76, 117, 0.4);
+$primary-pink-300: rgba(250, 76, 117, 0.3);
+$primary-pink-200: rgba(250, 76, 117, 0.2);
+$primary-pink-100: rgba(250, 76, 117, 0.1);
+$hm-burgandy: rgb(132, 35, 56);
+
+$hm-rose-pink: rgba(255, 183, 200, 1);
+
+$primary-black-1000: rgba(0, 0, 0, 1);
+$primary-black-900: rgba(0, 0, 0, 0.9);
+$primary-black-800: rgba(0, 0, 0, 0.8);
+$primary-black-700: rgba(0, 0, 0, 0.7);
+$primary-black-600: rgba(0, 0, 0, 0.6);
+$primary-black-500: rgba(0, 0, 0, 0.5);
+$primary-black-400: rgba(0, 0, 0, 0.4);
+$primary-black-300: rgba(0, 0, 0, 0.3);
+$primary-black-200: rgba(0, 0, 0, 0.2);
+$primary-black-100: rgba(0, 0, 0, 0.1);
+
+$secondary-black-1000: rgba(48, 48, 48, 1);
+$secondary-black-900: rgba(48, 48, 48, 0.9);
+$secondary-black-800: rgba(48, 48, 48, 0.8);
+$secondary-black-700: rgba(48, 48, 48, 0.7);
+$secondary-black-600: rgba(48, 48, 48, 0.6);
+$secondary-black-500: rgba(48, 48, 48, 0.5);
+$secondary-black-400: rgba(48, 48, 48, 0.4);
+$secondary-black-300: rgba(48, 48, 48, 0.3);
+$secondary-black-200: rgba(48, 48, 48, 0.2);
+$secondary-black-100: rgba(48, 48, 48, 0.1);
+
+$gray-in-dark-1000: rgba(224, 224, 224, 1);
+$gray-in-dark-900: rgba(224, 224, 224, 0.9);
+$gray-in-dark-800: rgba(224, 224, 224, 0.8);
+$gray-in-dark-700: rgba(224, 224, 224, 0.7);
+$gray-in-dark-600: rgba(224, 224, 224, 0.6);
+$gray-in-dark-500: rgba(224, 224, 224, 0.5);
+$gray-in-dark-400: rgba(224, 224, 224, 0.4);
+$gray-in-dark-300: rgba(224, 224, 224, 0.3);
+$gray-in-dark-200: rgba(224, 224, 224, 0.2);
+$gray-in-dark-100: rgba(224, 224, 224, 0.1);
+
+$green-1000: rgba(5, 79, 49, 1); 
+$green-900: rgba(5, 79, 49, 0.9);
+$green-800: rgba(5, 79, 49, 0.8);
+$green-700: rgba(5, 79, 49, 0.7);
+$green-600: rgba(5, 79, 49, 0.6);
+$green-500: rgba(5, 79, 49, 0.5);
+$green-400: rgba(5, 79, 49, 0.4);
+$green-300: rgba(5, 79, 49, 0.3);
+$green-200: rgba(5, 79, 49, 0.2);
+$green-100: rgba(5, 79, 49, 0.1);
+
+$green-tint-300: rgba(29, 100, 82, 0.3);
+$green-tint-200: rgba(29, 100, 82, 0.2);
+$avatar-card-text: rgba(71, 97, 93, 1);
+
+$hero-banner-bg: rgba(244, 248, 255, 1);
+
+$hm-blue-1000: rgba(58, 120, 207, 1);
+$hm-blue-900: rgba(58, 120, 207, 0.9);
+$hm-blue-800: rgba(58, 120, 207, 0.8);
+$hm-blue-700: rgba(58, 120, 207, 0.7);
+$hm-blue-600: rgba(58, 120, 207, 0.6);
+$hm-blue-500: rgba(58, 120, 207, 0.5);
+$hm-blue-400: rgba(58, 120, 207, 0.4);
+$hm-blue-300: rgba(58, 120, 207, 0.3);
+$hm-blue-200: rgba(58, 120, 207, 0.2);
+$hm-blue-100: rgba(58, 120, 207, 0.1);
+
+$hm-alice-blue: rgba(223, 236, 248, 1);
+$hm-aquamarine-blue: rgba(127, 255, 212, 1);
+$hm-bubble-odd-text: rgba(10, 59, 128, 1);
+$hm-bubble-even-text: rgba(29, 64, 52, 1);
+
+
+// Other brand colors
+$hm-green: rgba(50, 213, 131, 1);
+$hm-yellow: rgba(247, 144, 9, 1);
+$hm-blue: rgba(58, 120, 207, 1);
+$hm-pink: rgba(250, 76, 117, 1);
+$hm-red: rgba(249, 112, 102, 1);
+
+$white: #ffffff;
+$lightest-grey: #f5f5f5;
+$black: #000000;
+$blue: #1F3556;
+$drake-blue: #1E3B5B;
+$darkest-blue: #1A2D4A;
+$orange: #E67F37;
+$dark-orange: #ED7B31;
+$smoke: #f0f0f0;
+$lighter-blue: #CFD8EB;
+$lighter-grey: #f3f3f3;
+$light-grey: #ececec;
+$grey: #9E9E9E;
+$dark-grey: #EBEBEB;
+$darker-grey: #333333;
+$darkest-grey: #3c3c3c;
+
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+
+$text-hyperlink: #007db5;
+
+// Pagination Component
+$page-elem-bg: #EBEBEB;
+
+// Breadcrumb
+$breadcrumb-bg: #EBEBEB;
+
+// Resource
+$para-text-color: #5C6471;
+$code-block-bg: #F5F5F5;
+$code-block-border: #EBEBEB;
+$table-cell-bg: #EBEBEB;

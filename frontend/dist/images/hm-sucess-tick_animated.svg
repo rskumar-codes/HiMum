@@ -1,0 +1,11 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="">
+<path fill="white" stroke="url(#paint0_linear_546_494)" stroke-width="3" d="M1.5,30A28.5,28.5 0,1,1 58.5,30A28.5,28.5 0,1,1 1.5,30" class="jRrQruaf_0"></path>
+<path d="M19 29L29.5 39L45.5 20" stroke="#34A853" stroke-width="3" stroke-linecap="round" class="jRrQruaf_1"></path>
+<path d="M46.6429 20.9715C47.1794 20.3403 47.1027 19.3936 46.4715 18.8571C45.8403 18.3206 44.8936 18.3973 44.3571 19.0285L46.6429 20.9715ZM29.6429 40.9715L46.6429 20.9715L44.3571 19.0285L27.3571 39.0285L29.6429 40.9715Z" fill="#3F8251" class="jRrQruaf_2"></path>
+<defs>
+<linearGradient id="paint0_linear_546_494" x1="30" y1="0" x2="30" y2="60" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FA5D82"></stop>
+<stop offset="1" stop-color="#3A78CF"></stop>
+</linearGradient>
+</defs>
+<style data-made-with="vivus-instant">.jRrQruaf_0{stroke-dasharray:180 182;stroke-dashoffset:181;animation:jRrQruaf_draw 624ms linear 0ms forwards;}.jRrQruaf_1{stroke-dasharray:40 42;stroke-dashoffset:41;animation:jRrQruaf_draw 141ms linear 624ms forwards;}.jRrQruaf_2{stroke-dasharray:67 69;stroke-dashoffset:68;animation:jRrQruaf_draw 234ms linear 765ms forwards;}@keyframes jRrQruaf_draw{100%{stroke-dashoffset:0;}}@keyframes jRrQruaf_fade{0%{stroke-opacity:1;}92.3076923076923%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>

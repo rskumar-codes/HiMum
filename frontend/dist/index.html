@@ -1,0 +1,669 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>HiMum :: Your pregnancy companion</title>
+    <meta name="description" content="A one-stop mobile app for pregnancy support." />
+    <meta name="copyright" content="" />
+    <meta name="theme-color" content="#1F3556" />
+    <link rel="icon" type="img/png" href="./images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+
+    <!-- Prelader animation -->
+    <div class="preloader-background">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="spinner-layer spinner-red">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="spinner-layer spinner-yellow">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="spinner-layer spinner-green">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <!-- Header Section Starts -->
+        <header class="header fixed-top" data-aos="fade" data-aos-duration="800">
+            <div class="container">
+                <nav class="navbar navbar-override navbar-expand-lg navbar-dark p-0">
+                    <a class="navbar-brand" href="./"><img src="./images/himum_logo.svg"
+                            alt="HiMum" /></a>
+
+                    <!-- Hamburger menu -->
+                    <span class="sidebar-toggle">
+                        <span class="hamburger-label">
+                            <label>Menu</label>
+                            <label>Close</label>
+                        </span>
+                        <span class="hamburger-bars"></span>
+                    </span>
+
+                    <ul class="navbar-nav  header__main-menu d-lg-flex justify-content-lg-between align-items-center">
+                        <li class="nav-item header__submenu">
+                            <ul class="navbar-nav header__submenu-inner align-items-center">
+                                <li class="nav-item">
+                                    <a class="hm-btn hm-btn-primary outlined medium"
+                                        href="./pages/auth/login.html"
+                                        target="_self">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="hm-btn hm-btn-primary filled medium"
+                                        href="./pages/auth/signup.html"
+                                        target="_self"
+                                        id="sign_up_btn">Sign up</a>
+
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  header__submenu-second">
+                            <ul class="navbar-nav">
+                                <li class="nav-item d-lg-flex w-100 justify-content-lg-end">
+                                    <ul class="header__submenu-list">
+                                        <li class="nav-item one">
+                                            <a class="nav-link active" href="javascript: void(0);">Home</a>
+                                        </li>
+                                        <li class="nav-item two">
+                                            <a class="nav-link" href="./pages/community/index.html">Community</a>
+                                        </li>
+                                        <li class="nav-item three">
+                                            <a class="nav-link" href="./pages/discover/index.html">Discover</a>
+                                        </li>
+                                        <li class="nav-item five">
+                                            <a class="nav-link" href="./pages/help/index.html">Support</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Header Section Ends -->
+        <!-- Hero Banner Section Starts -->
+        <section class="hero-banner" data-aos="fade" data-aos-duration="5000">
+            <div class="container">
+                <div class="row hm-only-sm">
+                    <div class="col-md-6">
+                        <div class="hero-content-wrapper">
+                            <h1 class="main-title black-900" data-aos="fade-up" data-aos-duration="2300">One-stop mobile app for pregnancy support</h1>
+                            <h2 class="sub-title" data-aos="fade-up" data-aos-duration="900">An efficient pregnancy cycle companion</h2>
+                            <p class="description" data-aos="fade-up" data-aos-duration="800">A place where expectant mothers and their partners can interact in safety, get advice from professionals including doctors, dietitians, and midwives, and connect with one another.</p>
+
+                            <div class="hm-btn-group" data-aos="fade-up" data-aos-duration="600">
+                                <span>
+                                    <a class="hm-btn hm-btn-primary outlined medium"
+                                    href="javascript: void(0);">Get started free</a>
+                                </span>
+                                <span>
+                                    <a class="hm-btn hm-btn-primary filled medium"
+                                    href="javascript: void(0);">Ask for demo</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5">
+                        <div class="hero-banner-img" data-aos="zoom-in" data-aos-duration="2400">
+                            <img src="./images/illustrations/hm-app-banner-mom-thinking-about-baby-illustration.svg" alt="mother thinking about baby" class="" />
+
+                            <img src="./images/illustrations/hm-app-banner-infant-illustration.svg" alt="Baby" class="moving-baby hm-swing" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Banner Section Ends -->
+
+        <!---Features Section Starts -->
+        <section class="features high-res-maxwidth bg-white" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title secondary black-900 text-center">Salient features</h2>
+                
+                <div class="hm-card-wrapper">
+                    <div class="row">
+                        <!-- Card -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4 my-2" data-aos="fade-up">
+                            <div class="card my-3">
+                                <img class="card-img-top" src="./images/illustrations/hm-app-pregnancy-progress-illustration.svg" alt="Pregnancy progress">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pregnancy progress</h5>
+                                    <p class="card-text">During pregnancy, your amazing baby grows from poppy seed to pumpkin.</p>
+
+                                    <a href="javascript: void(0);" class="hm-btn hm-btn-primary outlined small rounded">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4 my-2" data-aos="fade-up">
+                            <!-- Card -->
+                            <div class="card my-3">
+                                <img class="card-img-top" src="./images/illustrations/hm-app-partner-sync-illustartion.svg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Partner sync</h5>
+                                    <p class="card-text">Update your daily conditions and become closer
+                                        to your partner.</p>
+                                    
+                                    <a href="javascript: void(0);" class="hm-btn hm-btn-primary outlined small rounded">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4 my-2" data-aos="fade-up">
+                            <!-- Card -->
+                            <div class="card my-3">
+                                <img class="card-img-top" src="./images/illustrations/hm-app-emergency-illustration.svg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Emergency</h5>
+                                    <p class="card-text">Send alerts and make calls to people who are on this emergency contacts list.</p>
+                                    
+                                    <a href="javascript: void(0);" class="hm-btn hm-btn-primary outlined small rounded">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4 my-2" data-aos="fade-up">
+                            <!-- Card -->
+                            <div class="card my-3">
+                                <img class="card-img-top" src="./images/illustrations/hm-app-community-illustration.svg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Community</h5>
+                                    <p class="card-text">Able to communicate, engage, and connect with one another both privately and in groups.</p>
+                                    
+                                    <a href="javascript: void(0);" class="hm-btn hm-btn-primary outlined small rounded">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4 my-2" data-aos="fade-up">
+                            <!-- Card -->
+                            <div class="card my-3">
+                                <img class="card-img-top" src="./images/illustrations/hm-app-discover-illustration.svg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Discover</h5>
+                                    <p class="card-text">Access to variety of resources such as videos, podcasts, articles, and user guides.</p>
+                                    
+                                    <a href="javascript: void(0);" class="hm-btn hm-btn-primary outlined small rounded">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4 my-2" data-aos="fade-up">
+                            <!-- Card -->
+                            <div class="card my-3">
+                                <img class="card-img-top" src="./images/illustrations/hm-app-shortcuts-illustration.svg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">App shortcuts</h5>
+                                    <p class="card-text">A quick way to browse and an efficient way to perform common tasks. You can save time!</p>
+                                    
+                                    <a href="javascript: void(0);" class="hm-btn hm-btn-primary outlined small rounded">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- Features Section Ends -->
+
+        <!-- Our Team Section Starts -->
+        <section class="members high-res-maxwidth bg-green-tint-200" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title secondary black-1000 text-center">Our UX evangelist</h2>
+
+                <div class="hm-avatar-card-wrapper">
+                    <!-- Avatar card -->
+                    <div class="hm-avatar-card" data-aos="fade-up" data-aos-duration="400">
+                        <div class="hm-avatar-card-img-top">
+                            <img src="./images/avatars/avatar-senthil.svg" alt="Senthilkumar R" />
+                        </div>
+                        <div class="hm-avatar-card-body">
+                            <h5 class="hm-avatar-card-title">Senthilkumar Rajendran</h5>
+                        </div>
+                    </div>
+                    
+                    <!-- Avatar card -->
+                    <div class="hm-avatar-card" data-aos="fade-up" data-aos-duration="500">
+                        <div class="hm-avatar-card-img-top">
+                            <img src="./images/avatars/avatar-pitchaya.svg" alt="Pitchaya T" />
+                        </div>
+                        <div class="hm-avatar-card-body">
+                            <h5 class="hm-avatar-card-title">Pitchaya Tangtanawirut</h5>
+                        </div>
+                    </div>
+                    
+                    <!-- Avatar card -->
+                    <div class="hm-avatar-card" data-aos="fade-up" data-aos-duration="600">
+                        <div class="hm-avatar-card-img-top">
+                            <img src="./images/avatars/avatar-sam.svg" alt="Samuel A" />
+                        </div>
+                        <div class="hm-avatar-card-body">
+                            <h5 class="hm-avatar-card-title">Samuel Ayeni</h5>
+                        </div>
+                    </div>
+                    
+                    <!-- Avatar card -->
+                    <div class="hm-avatar-card" data-aos="fade-up" data-aos-duration="700">
+                        <div class="hm-avatar-card-img-top">
+                            <img src="./images/avatars/avatar-ishmam.svg" alt="Ishmam S" />
+                        </div>
+                        <div class="hm-avatar-card-body">
+                            <h5 class="hm-avatar-card-title">Ishmam Saeid</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Team Section Ends -->
+        
+        <!-- Testimonials Section Starts -->
+        <section class="testimonial high-res-maxwidth bg-white" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title secondary black-1000 text-center">Testimonials</h2>
+                <h2 class="section-text-h5 secondary black-700 text-center mb-5">You don't have to believe what we say. Hear from our users!</h2>
+
+                <div class="row" data-masonry='{"percentPosition": true }'>
+                    <!-- Card -->
+                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="400">
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <div class="card-image-wrapper">
+                                        <img src="./images/hm-app-card-image-dummy.svg" alt="person" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i>About HiMum</i></h5>
+                                        <p class="card-text">This app has exceeded my expectations. Not only does it provide essential pregnancy information, but it also offers workout routines, meditation sessions, and even birth plan templates. It's a one-stop solution that has truly enhanced my pregnancy experience.</p>
+
+                                        <figure class="pt-3 mb-0">
+                                            <figcaption class="blockquote-footer mb-0">
+                                                <cite title="samantha">Samantha</cite>
+                                            </figcaption>
+                                        </figure>
+
+                                        <p class="card-text">
+                                            <small class="hm-text-body-secondary">Last updated a min ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="400">
+                        <div class="card p-3">
+                            <figure class="mb-0">
+                                <blockquote class="blockquote">
+                                        <p>I've tried several pregnancy apps, but this one stands out from the rest. The interface is user-friendly, the content is well-curated, and the personalized recommendations make me feel like it understands my unique needs. It's definitely become an essential part of my pregnancy routine.</p>
+                                </blockquote>
+                                
+                                <figcaption class="blockquote-footer mb-0 mt-2">
+                                    <cite title="Michelle">Michelle</cite>
+                                </figcaption>
+                            </figure>
+
+                            <p class="card-text mt-1">
+                                <small class="hm-text-body-secondary">Last updated 2 weeks ago</small>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="400">
+                        <div class="card">
+                            <div class="card-image-wrapper">
+                                <img src="./images/hm-app-card-image-dummy.svg" alt="person" />
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title">I'm so glad I discovered this app</h5>
+                                <p class="card-text">The daily articles are not only educational but also provide a sense of reassurance and encouragement. It's like having a cheerleader by my side, reminding me that I'm not alone on this beautiful journey.</p>
+                                <figure class="mb-0">
+                                    <figcaption class="blockquote-footer mb-0 mt-2">
+                                        <cite title="Emily">Emily</cite>
+                                    </figcaption>
+                                </figure>
+                                <p class="card-text mt-1">
+                                    <small class="hm-text-body-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card -->
+                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="400">
+                        <div class="card bg-pink-900 text-center p-3">
+                            <figure class="mb-0">
+                                <blockquote class="blockquote text-white">
+                                    <p>I feel confident and prepared with this app by my side.</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer mb-0 mt-2 text-white">
+                                    <cite title="Rebecca">Rebecca</cite>
+                                </figcaption>
+                            </figure>
+                            <p class="card-text mt-1">
+                                <small class="text-white">Last updated 23 mins ago</small>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="400">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">As a first-time mom, this app has been a blessing</h5>
+                                <p class="card-text">It helps me track my nutrition and weight gain, and even offers relaxation techniques. It's like having a virtual pregnancy assistant guiding me through this incredible journey.</p>
+                                <figure class="mb-0">
+                                    <figcaption class="blockquote-footer mb-0 mt-2">
+                                        <cite title="Jessica">Jessica</cite>
+                                    </figcaption>
+                                </figure>
+                                <p class="card-text mt-1">
+                                    <small class="hm-text-body-secondary">Last updated a week ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="400">
+                        <div class="card bg-blue-900 text-center p-3">
+                            <figure class="mb-0">
+                                <blockquote class="blockquote text-white">
+                                    <p>This pregnancy app has been a lifesaver for me. From the moment I found out I was expecting, it has guided me through every stage with informative articles, week-by-week updates, and a supportive community. It's like having a personal pregnancy coach in my pocket!</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer mb-0 mt-2 text-white">
+                                    <cite title="Rishi S">Rish S</cite>
+                                </figcaption>
+                            </figure>
+                            <p class="card-text mt-1">
+                                <small class="text-white">Last updated 13 mins ago</small>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="400">
+                        <div class="card p-3 text-end">
+                            <figure class="mb-0">
+                                <blockquote class="blockquote">
+                                    <p>I can't get enough of this app's community feature. Being able to connect with other expecting moms, ask questions, and share experiences has made my pregnancy feel less overwhelming. It's comforting to know that there's a whole support network right at my fingertips.</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer mb-0 mt-2 hm-text-body-secondary">
+                                    <cite title="Maria">Maria</cite>
+                                </figcaption>
+                            </figure>
+                            <p class="card-text mt-1">
+                                <small class="hm-text-body-secondary">Last updated a day ago</small>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="400">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">I love how this app keeps me informed about my baby's development.</h5>
+                                <p class="card-text">The daily tips, pregnancy milestones, and interactive 3D models have made the experience so much more exciting and tangible. It's truly a must-have for any expecting parent!</p>
+                                <figure class="mb-0">
+                                    <figcaption class="blockquote-footer mb-0 mt-2 hm-text-body-secondary">
+                                        <cite title="David">David</cite>
+                                    </figcaption>
+                                </figure>
+                                <p class="card-text mt-1">
+                                    <small class="hm-text-body-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- Testimonials Section Ends -->
+
+        <!---App Glimpse Section Starts -->
+        <section class="showcase-title high-res-maxwidth bg-white" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title secondary black-900 text-center">A sneak peek of an application</h2>
+            </div>
+        </section>
+        <!---App Glimpse Section Ends -->
+
+        <!---App Glimpse Section Starts -->
+        <section class="showcase two-column high-res-maxwidth bg-white">
+            <div class="container pos-relative">
+                <svg class="hm-app-abstract-shapes pos-absolute top-left" width="88" height="51" viewBox="0 0 88 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.5" y="12.7737" width="71.0842" height="36.7263" rx="10.5" stroke="#407BFF" stroke-width="3"/>
+                    <rect x="29.9521" y="1.5" width="56.0526" height="28.1368" rx="10.5" stroke="#407BFF" stroke-width="3"/>
+                </svg>
+
+                <svg class="hm-app-abstract-shapes pos-absolute bottom-right rotate-180" width="88" height="51" viewBox="0 0 88 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.5" y="12.7737" width="71.0842" height="36.7263" rx="10.5" stroke="#407BFF" stroke-width="3"/>
+                    <rect x="29.9521" y="1.5" width="56.0526" height="28.1368" rx="10.5" stroke="#407BFF" stroke-width="3"/>
+                </svg>
+                    
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="showcase-holder" data-aos="fade-right" data-aos-duration="800">
+                            <img class="img-left" src="./images/illustrations/hm-app-light-mode.png" alt="HiMum App - Light mode" />
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="showcase-holder" data-aos="fade-left" data-aos-duration="1000">
+                            <img class="img-right" src="./images/illustrations/hm-app-dark-mode.png" alt="HiMum App - dark mode" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---App Glimpse Section Ends -->
+
+        <!-- App Store: CTA Bar Starts -->
+        <section class="download bg-pink-100" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title primary black-1000 text-center">Download our app now!</h2>
+                <div class="app-logo-group mt-4">
+                    <span></span>
+                    
+                    <span>
+                        <a href="javascript: void(0);">
+                            <img src="./images/hm-app-download-on-play-store.svg" alt="Get it on play store" />
+                        </a>
+                    </span>
+                    <span>
+                        <a href="javascript: void(0);">
+                            <img src="./images/hm-app-download-on-app-store.svg" alt="Get it on app store" />
+                        </a>
+                    </span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+        <!-- App Store: CTA Bar Ends -->
+
+        <!-- Footer Section Starts -->
+        <footer class="footer" data-aos="fade-up">
+            <!-- Footer links -->
+            <div class="footer-primary">
+                
+                <div class="container">
+                    <div class="footer__nav-row">
+                        <div class="footer__links-row">
+                            
+                            <!-- Column: Information -->
+                            <div class="links-col" data-aos="fade">
+                                <h6 class="links-col__title">Information</h6>
+                                <div class="footer__links-group">
+                                    <ul>
+                                        <li><a href="javascript: void(0);">Home</a></li>
+                                        <li><a href="./pages/community/index.html">Community</a></li>
+                                        <li><a href="./pages/discover/index.html">Discover</a></li>
+                                        <li><a href="./pages/help/index.html">Support</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Column: Services -->
+                            <div class="links-col" data-aos="fade">
+                                <h6 class="links-col__title">Services</h6>
+                                <div class="footer__links-group">
+                                
+                                    <ul>
+                                        <li><a href="javascript: void(0);">Daily Reads</a></li>
+                                        <li><a href="javascript: void(0);">Weekly Videos</a></li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+
+                            <!-- Column: Resources -->
+                            <div class="links-col" data-aos="fade">
+                                <h6 class="links-col__title">Resources</h6>
+                                <div class="footer__links-group">
+                                
+                                    <ul>
+                                        <li><a href="javascript: void(0);">Article</a></li>
+                                        <li><a href="javascript: void(0);">Podcast</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Column: Follow us -->
+                            <div class="links-col" data-aos="fade">
+                                <h6 class="links-col__title">Follow us on</h6>
+
+                                <div class="footer__links-group">
+                                    <ul class="social-menu-list">
+                                        <li class="list-item">
+                                            <a href="javascript: void(0);">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                                    <path id="ic-facebook-circled-white" d="M15,3a12.059,12.059,0,0,0-1.794,23.975V18.258H10.237v-3.17h2.969v-2.11c0-3.493,1.693-5.026,4.581-5.026a16.76,16.76,0,0,1,2.461.15v2.767h-1.97c-1.226,0-1.654,1.169-1.654,2.486v1.733h3.593l-.487,3.17H16.624V27A12.059,12.059,0,0,0,15,3Z" transform="translate(-3 -3)" fill="#fff"/>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="javascript: void(0);">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                                    <path id="ic-twitter-circled-white" d="M14,2A12,12,0,1,0,26,14,12.013,12.013,0,0,0,14,2Zm5.863,9.665c.005.123.008.248.008.374A8.22,8.22,0,0,1,7.217,18.962a5.842,5.842,0,0,0,4.278-1.2,2.9,2.9,0,0,1-2.7-2.007,2.884,2.884,0,0,0,1.305-.05,2.892,2.892,0,0,1-2.317-2.834v-.037a2.878,2.878,0,0,0,1.309.362A2.9,2.9,0,0,1,8.2,9.341a8.21,8.21,0,0,0,5.957,3.02,2.891,2.891,0,0,1,4.924-2.636,5.794,5.794,0,0,0,1.835-.7,2.9,2.9,0,0,1-1.271,1.6,5.812,5.812,0,0,0,1.661-.455A5.877,5.877,0,0,1,19.863,11.665Z" transform="translate(-2 -2)" fill="#fff"/>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="list-item">
+                                                <a href="javascript: void(0);">
+                                                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">
+                                                    <path id="ic-instagram-circled-white"  d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z" fill="#fff"/>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-secondary">
+
+                <div class="container">
+                    <!-- Secondary Footer Nav -->
+                    <div class="d-flex justify-content-center">
+                        <p>&#169; 2023 HiMum. All rights reserved.</p>
+                    </div>
+                </div>
+
+            </div>
+            
+        </footer>
+    </div>
+
+    <!-- [Action :: Go To Top] -->
+    <div id="back-top">
+        <a href="javascript: void(0);" class="hm-floating-btn action-go-to-top1 d-none" id="gotoTopAction">
+            <img src="./images/app-icons/hm-caret-up.svg" />
+        </a>
+    </div>
+
+    <script src="./scripts/jquery.min.js"></script>
+    <script src="./scripts/popper.min.js"></script>
+    <script src="./scripts/bootstrap.min.js"></script>
+    <script src="./scripts/masonry.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script> -->
+    <script src="./scripts/aos.js"></script>
+    <script src="./scripts/custom.js"></script>
+
+    <script>
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+@charset "utf-8";
+
+@import "../base/_variables";
+@import 'node_modules/bootstrap/scss/_functions';
+@import 'node_modules/bootstrap/scss/_variables';
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints';
+
+
+/** 
+ * Hero banner
+ */
+.hero-banner {
+    background-color: $hero-banner-bg;
+    background-image: url("../images/hm-app-home-hero-banner-bg.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-block: 68px;
+    min-height: 400px;
+
+    .hero-banner-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        position: relative;
+        height: 100%;
+        margin-block: 50px 20px;
+
+        .moving-baby {
+            align-self: flex-end;
+            margin: 0 auto 0 auto;
+            position: absolute;
+            left: 25%;
+            top: 14%;
+        }
+        
+        // Bounce
+        .hm-bounce {
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom;
+            animation-name: bounce-animation;
+            animation-timing-function: linear;
+        }
+
+        @keyframes bounce-animation {
+            0%   { transform: translateY(0); }
+            50%  { transform: translateY(-30px); }
+            100% { transform: translateY(0); }
+        }
+        
+        // Swing
+        .hm-swing {
+            animation: swing-animation ease-in-out 2s infinite alternate;
+            transform-origin: center -20px;
+        }
+
+        @keyframes swing-animation {
+            0% { transform: rotate(4deg); }
+            100% { transform: rotate(-4deg); }
+        }
+    }
+}
+
+/**
+ * Section headings 
+ */
+.site-heading,
+.section-title {
+    font-size: 40px;
+    font-weight: 600;
+    color: $secondary-black-1000;
+}
+
+/**
+ * Section: Feature 
+ */
+.more-info {
+    display: flex;
+    padding-block: 50px;
+    width: 100%;
+
+    .section-text-h5, p {
+        margin-block-end: 20px;
+    }
+}
+
+/**
+ * Section: Feature 
+ */
+.features {
+    display: flex;
+    padding-block: 50px;
+    width: 100%;
+}
+
+/**
+ * Section: Events 
+ */
+.events {
+    display: flex;
+    padding-block: 50px;
+    width: 100%;
+}
+
+/**
+ * Section: Members 
+ */
+.members {
+    display: flex;
+    padding-block: 50px;
+    width: 100%;
+
+    .section-title {
+        // color: $white !important;
+    }
+
+    .hm-avatar-card-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        margin-block: 30px;
+    }
+
+    .hm-avatar-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        .hm-avatar-card-title {
+            color: $primary-black-1000;
+            font-size: 18px;
+            font-weight: 400;
+            margin-block: 10px;
+            text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.3);
+        }
+    }
+}
+
+/**
+ * Section: Members 
+ */
+.testimonial {
+    display: flex;
+    padding-block: 50px;
+    width: 100%;
+
+    // dummy placeholder for card-image-top
+    .card-image-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        .card-title { color: $primary-black-1000; }
+        .card-text { color: $primary-black-800; }
+
+        .blockquote-footer {
+            color: $primary-pink-900;            
+        }
+    }
+}
+
+/**
+ * Section: Members 
+ */
+ .showcase-title {
+    display: flex;
+    padding-block: 50px 25px;
+    width: 100%;
+    position: relative;
+ }
+
+ .showcase {
+    display: flex;
+    // padding-block: 50px;
+    width: 100%;
+    position: relative;
+
+    &.single-column {
+        background-color: aquamarine;
+    }
+
+    &.two-column::before,
+    &.two-column::after {
+        content: "";
+        display: flex;
+        width: calc(100% / 2);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+
+    &.two-column::before {
+        left: 0;
+        background-color: $hm-blue-200;
+    }
+    
+    &.two-column {
+        
+        &::after {
+            right: 0;
+            background-color: $primary-black-1000;
+        }
+        
+        &.right-blue::after {
+            background-color: $hm-blue-900;
+        }
+
+    }
+
+    .container {
+        z-index: 10;
+        overflow: hidden;
+        min-height: 600px;
+    }
+
+    &-holder {
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        img {
+            position: absolute;
+            z-index: 10;
+            top: 100px;
+        }
+    }
+
+    // .point-down {
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     z-index: 10;
+    // }
+
+    .list-title {
+        margin-block-start: 50px;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .bubble-list {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-block: 50px;
+
+        span {
+            display: flex;
+
+            &:not(:last-of-type) {
+                margin-block-end: 10px;
+            }
+
+            label {
+                padding-inline: 20px;
+                padding-block: 10px;
+                background-color: $hm-alice-blue;
+                color: $hm-bubble-odd-text;
+                font-size: 16px;
+                font-weight: 500;
+                border-radius: 18px;
+                max-width: 95%;
+            }
+            
+            &:nth-child(even) {
+                flex-direction: row-reverse;
+                
+                label {
+                    background-color: $hm-aquamarine-blue;
+                    color: $hm-bubble-even-text;
+                    text-align: end;
+                }
+            }
+        }
+    }
+
+    .cta-group {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/**
+ * Section: Download 
+ */
+.download {
+    display: flex;
+    padding-block: 50px;
+    width: 100%;
+}
+
+.app-logo-group {
+    display:grid; 
+    grid-template-columns: 1fr auto auto 1fr; 
+    column-gap: 20px;
+}

@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@import "./variables";
+
+.hm-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 45px;
+    border-radius: 12px;
+    font-weight: 600;
+    line-height: 150%;
+    padding-inline: 15px;
+    border: 0;
+
+    &.medium {
+        min-height: 42px;
+    }
+
+    &:hover {
+        box-shadow: 0px 1px 5px lighten($primary-black-400, 0.3) !important;
+    }
+
+    &.small {
+        min-height: 32px;
+
+        &.rounded {
+            border-radius: 16px !important;
+        }
+    }
+
+}
+
+.hm-btn-primary {
+    &.filled {
+        background-color: $primary-pink-1000;
+        color: $white;
+
+        &:focus,
+        &:active,
+        &.active,
+        &:hover {
+            background-color: $primary-pink-dark !important;
+            // box-shadow: 0px 0px 6px lighten($primary-pink-dark, 0.54) !important;
+            transition: 0.3s ease-in-out;
+            background-image: none;
+        }
+    }
+
+    &.outlined {
+        border: 1px solid $primary-pink-1000 !important;
+        background-color: $white !important;
+        color: $primary-pink-1000 !important;
+
+        &:hover {
+            color: $primary-pink-dark !important;
+            transition: 0.3s ease-in-out;
+            background-color: $primary-pink-100 !important;
+        }
+    }
+}
+
+.hm-btn-group {
+    display: flex;
+    column-gap: 10px;
+    margin-block: 10px;
+}
+
+.hm-link-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 20px;
+    padding-block: 6px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    
+    &:hover {
+        text-decoration: none;
+    }
+
+    .post-adornment {
+        margin-inline-start: 10px;
+    }
+
+    &.outline {
+        border-width: 1px;
+        border-style: solid;
+
+
+        &.in-dark-bg {
+            border-color: $white;
+            color: $white;
+
+            
+            .post-adornment {
+                border-color: white;
+            }
+            
+            &:hover {
+                border-color: $hm-rose-pink;
+                background-color: $hm-rose-pink;
+                color: $primary-black-1000;
+
+                .post-adornment {
+                    border-color: $primary-black-1000;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+/**
+ * @application name: HiMum;
+ * @created date: 01-May-2023;
+ * @author name: senthilkumarr;
+ * @version: v0.1;
+
+This style document is created for the HiMum WEB APPLICATION and it includes the following functions/methods,
+  1) Importing base, modules and pages styles into one file
+*/
+
+/** CSS selector alias names
+ * a) HiMum = hm
+ */
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "base/all";
+@import "modules/all";
+@import "pages/all";
+
+
+
+

@@ -1,0 +1,241 @@
+.footer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    @at-root #{&}-primary {
+        background-color: $secondary-black-1000;
+        padding: 40px 0px;
+    }
+
+
+    &__links-list {
+        li {
+            a {
+                &:not(.has-child):hover {
+                    color: $primary-pink-700;
+                    transition: 0.3s ease;
+                }
+
+                &.active {
+                    color: $primary-pink-700;
+                    cursor: default;
+                }
+            }
+        }
+    }
+
+
+    &__copy-right-menu {
+        ul {
+            li {
+                padding: 0px 7px;
+
+                &:first-child {
+                    padding-left: 0px;
+                }
+
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &__footer-content {
+        ul {
+            li {
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &__copy-right {
+        p {
+            color: $white;
+        }
+
+        &-menu ul li {
+            a {
+                border-right: 1px solid $white;
+                padding-right: 10px;
+            }
+
+            &:last-child a {
+                border-right: none;
+            }
+        }
+    }
+
+    &__footer-menu {
+        max-width: 60%; //240px
+
+        & > div:first-child {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        h6 {
+            color: $white;
+            text-decoration: underline;
+        }
+
+        li {
+            padding-bottom: 5px;
+        }
+    }
+
+    &__footer-logo {
+        text-align: right;
+
+        img {
+            max-width: 80%;
+        }
+    }
+
+    &__logo-detail {
+        margin-top: 15px;
+        text-align: end;
+    }
+
+    &__footer-submenu {
+        // max-width: 136px;
+        width: 100%;
+
+        a {
+            margin: 8px;
+            display: inline-block;
+
+            &>img {
+                max-width: 17px;
+
+                @media (max-width: 575.98px) {
+                    max-width: 24px
+                }
+            }
+
+            path {
+                transition: all 0.3s ease-in-out;
+            }
+
+            &:hover {
+                path {
+                    fill: $primary-pink-800
+                }
+            }
+        }
+    }
+
+    &-group {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        // min-width: 300px;
+
+        .footer__links-list {
+            flex: 1;
+            margin-right: 10px;
+        }
+    }
+
+    .comp-address-box {
+        min-width: 200px;
+        margin-left: 30px;
+    }
+
+    &__nav-row {
+        position: relative;
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+
+        .footer {
+            &__links-row {
+                display: flex;
+                flex-wrap: wrap;
+                // margin: 0px -15px;
+                flex: 1 1 0%;
+                column-gap: 20px;
+
+                .links-col {
+                    flex: 1;
+
+                    &__title {
+                        color: $gray-in-dark-1000;
+                        padding-block: 10px;
+                        border-bottom: 1px $gray-in-dark-200 solid;
+                    }
+                }
+            }
+
+            &__links-group {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+
+                ul:not(.social-menu-list) {
+                    display: flex;
+                    flex: 1;
+                    flex-wrap: wrap;
+                    gap: 10px;
+
+                    li {
+                        width: 100%;
+
+                        a {
+                            color: $gray-in-dark-500;
+
+                            &:not(.has-child):hover {
+                                color: $primary-pink-700;
+                                transition: 0.3s ease;
+                            }
+            
+                            &.active {
+                                color: $primary-pink-700;
+                                cursor: default;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Social menu
+    .social-menu-list {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+
+        .list-item, li {
+            column-gap: 10px;
+
+            a {
+                path {
+                    transition: all 0.3s ease-in-out;
+                }
+    
+                &:hover {
+                    path {
+                        fill: $primary-pink-800
+                    }
+                }
+            }
+        }
+    }
+
+    @at-root #{&}-secondary{
+        background-color: $primary-black-900;
+        padding-block: 15px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        
+        p {
+            color: $gray-in-dark-600 !important;
+        }
+    }
+}

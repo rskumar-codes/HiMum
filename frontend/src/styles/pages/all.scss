@@ -1,0 +1,23 @@
+/**
+ * @application name: HiMum;
+ * @created date: 01-May-2023;
+ * @author name: senthilkumarr;
+ * @version: v0.1;
+
+This style document is created for the HiMum WEB APPLICATION and it includes the following functions/methods,
+  1) Page specific styles
+*/
+
+/** CSS selector alias names
+ * a) HiMum = hm
+ */
+
+@import "home";
+@import "help";
+@import "discover";
+@import "login";
+@import "toolkit";
+
+// This should include at the last
+@import "responsive";
+

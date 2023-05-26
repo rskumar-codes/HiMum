@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="icon-go-back-arrow" transform="translate(-145 -101)">
+    <rect id="bound-box" width="24" height="24" transform="translate(145 101)" fill="#e55353" opacity="0"/>
+    <path id="keyboard_backspace-24px" d="M20,11H6.83L9.71,8.12A1,1,0,0,0,8.3,6.71L3.71,11.3a1,1,0,0,0,0,1.41L8.3,17.3a1,1,0,1,0,1.41-1.41L6.83,13H20a1,1,0,0,0,0-2Z" transform="translate(144.582 100.582)" fill="#1f3556"/>
+  </g>
+</svg>

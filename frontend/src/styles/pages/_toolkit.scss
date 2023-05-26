@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+@import "../base/_variables";
+@import "../base/_helpers";
+
+.toolkit-wrapper {
+    display: flex;
+    box-sizing: border-box;
+    padding: 20px;
+
+    .page-title {
+        color: $primary-pink-1000;
+    }
+
+    h4 {
+        position: relative;
+        padding-block-end: 10px;
+
+        &::after {
+            content: "";
+            height: 3px;
+            background-color: $primary-pink-500;
+            width: 80px;
+            display: inline-flex;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-radius: 20px;
+        }
+    }
+
+    .page-index-list {
+        counter-reset: section;
+        list-style: none;
+
+        li {
+            font-size: 16px;
+            margin-block: 15px;
+            display: flex;
+            align-items: center;
+
+            a {
+                color: $hm-blue-1000;
+                font-weight: 500;
+
+                &:hover {
+                    text-decoration: underline;
+                    opacity: 0.7;
+                }
+            }
+
+            &::before {
+                counter-increment: section;
+                content: counters(section,".") "";
+                background-color: $hm-blue-1000;
+                color: $white;
+                font-weight: 500;
+                border-radius: 50%;
+                display: inline-flex;
+                width: 24px;
+                height: 24px;
+                justify-content: center;
+                align-items: center;
+                margin-inline-end: 5px;
+            }
+        }
+    }
+
+    .tech-stack-list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        
+        li {
+            display: inline-flex;
+            
+
+            label {
+                background-color: $hm-blue-100;
+                border: 1px $hm-blue-1000 solid;
+                color: $hm-blue-1000;
+                border-radius: 20px;
+                padding-inline: 20px;
+                padding-block: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 36px;
+            }
+        }
+
+        &.yellow-chips {
+            label {
+                background-color: #bcfadc;
+                border: 1px #81cba7 solid;
+                color: #55806b;
+            }
+        }
+    }
+}
+
+.text-small-14 {
+    font-size: 14px;
+    color: $primary-black-700;
+}

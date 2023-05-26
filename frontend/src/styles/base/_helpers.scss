@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+@import "_variables";
+
+//SaSS Variables
+$padsizes: 0px,
+5px,
+10px,
+15px;
+$icon-url: "../images/app-icons/";
+
+@each $padsize in $padsizes {
+    .gutters-#{$padsize} {
+        .column {
+            padding-left: $padsize;
+            padding-right: $padsize;
+            padding-top: $padsize;
+            padding-bottom: $padsize;
+        }
+    }
+}
+
+// Font Sizes
+.font-10 {
+    font-size: 10px !important;
+}
+
+.font-12 {
+    font-size: 12px !important;
+}
+
+.font-16 {
+    font-size: 16px !important;
+}
+
+.font-18 {
+    font-size: 18px !important;
+}
+
+.font-20 {
+    font-size: 20px !important;
+}
+
+.font-24 {
+    font-size: 24px !important;
+}
+
+.font-28 {
+    font-size: 28px !important;
+}
+
+.font-30 {
+    font-size: 30px !important;
+}
+
+.font-32 {
+    font-size: 32px !important;
+}
+
+// Text Colors
+.text-orange { color: $orange;}
+.text-blue {color: $blue;}
+.hm-text-body-primary { color: $primary-pink-900;}
+.hm-text-body-secondary { color: $primary-black-600;}
+
+// Positions
+.pos-relative { position: relative; }
+.pos-absolute { position: absolute; }
+.pos-fixed { position: fixed; }
+
+// Rotate
+.rotate-45 { transform: rotate(45deg); }
+.rotate-90 { transform: rotate(90deg); }
+.rotate-180 { transform: rotate(180deg); }
+.rotate-270 { transform: rotate(270deg); }
+.rotate-360 { transform: rotate(360deg); }
+
+/* [Go to Top - Action] --- Starts Here */
+.hm-floating-btn {
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 2px solid $primary-pink-1000;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .2s;
+    display: flex;
+    position: fixed;
+    top: auto;
+    bottom: 20px;
+    opacity: 0;
+    left: auto;
+    right: 16px;
+    box-shadow: 0 8px 15px rgba(8,63,126,.15);
+
+    &:hover {
+        background-color: $primary-pink-200;
+    }
+
+    &.hm-floating-btn-active {
+        background-color: $primary-pink-200;
+        // bottom: 20px;
+        opacity: 1;
+        transition: background-color 1s, bottom 1s, opacity 2s;
+    }
+
+    &:hover {
+        color: $orange;
+        bottom: 10px;
+    }
+
+    &.hm-floating-btn-blur {
+        bottom: 0px;
+        opacity: 0;
+        transition: bottom 1s, opacity 2s;
+    }
+
+    & > img {
+        width: 24px; 
+        height: 24px; 
+        display: inline-block;
+        object-fit: contain;
+    }
+}
+/* [Go to Top - Action] --- Ends Here */
+
+/* [Arrow icon] --- Starts Here */
+.hm-arrow {
+    border: solid;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    border-color: $primary-black-1000;
+    
+    &.size46x46 {
+        border-width: 0 46px 46px 0;
+    }
+
+    &.color-pink {
+        border-color: $primary-pink-900;
+    }
+    
+    &.color-blue {
+        border-color: $hm-blue-900;
+    }
+}
+  
+.hm-arrow-right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+  
+.hm-arrow-left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+  
+.hm-arrow-up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+  
+.hm-arrow-down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+/* [Arrow icon] --- Ends Here */
